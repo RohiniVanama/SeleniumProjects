@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="AmazonSuite" verbose="2" parallel="classes" thread-count='7'>
+ <test name="Home Page Test">
+   <classes>
+      <class name="com.runner.HomePageRunner"/>
+   </classes>
+ </test>
+</suite>
