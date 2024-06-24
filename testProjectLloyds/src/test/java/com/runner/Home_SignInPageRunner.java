@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 	
 	@CucumberOptions(features = "src/test/resources/features",
 			glue= {"com.stepDefinitions","com.hooks"},
-			plugin= {"pretty","html:target/cucumber-reports","com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+					plugin= {"pretty","html:target/cucumber-reports"},
 			monochrome=true,
 			publish=true, tags ="@Smoke")
 	
