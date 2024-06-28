@@ -25,7 +25,8 @@ public class Hooks {
 		//Log.info("Launching browser");	
 		
 		String browsername = CommonUtils.getGlobalValue("browser");
-		DriverManager.initiate_driver(browsername);	
+		DriverManager driverManager = new DriverManager();
+		driverManager.initiate_driver(browsername);	
 		
 	}
 	

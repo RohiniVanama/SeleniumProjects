@@ -27,7 +27,7 @@ public class CommonUtils {
 		  return prop.getProperty(key);		
 		}
 	
-	public static String driverpath() {
+	public static  String driverpath() {
 		String path2 ="";
 		if(getGlobalValue("browser").equalsIgnoreCase("Chrome")){
 		path2 =getGlobalValue("ChromeDriverPath");}

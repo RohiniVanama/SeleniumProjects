@@ -27,6 +27,7 @@ Feature: Title of your feature
     Then I login with incorrect "<userid>" and verify if expected "<error>" is displayed
 
     Examples: 
-      | userid|   | error| 
-      | admin |   |  We cannot find an account with that email address | 
-      | 1234 |    | We cannot find an account with that mobile number | 
+      |userid|   |error| 
+      |admin|   |Invalid email address.| 
+      |1234|    |Invalid mobile number|
+ 

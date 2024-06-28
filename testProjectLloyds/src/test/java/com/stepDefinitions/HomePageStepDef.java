@@ -24,7 +24,7 @@ public class HomePageStepDef {
 	
 	public static Properties prop = new Properties();
 	
-	WebDriver driver;
+	WebDriver driver=DriverManager.getDriver();
 	HomePagePom home = new HomePagePom();
 	
 	
@@ -32,7 +32,7 @@ public class HomePageStepDef {
 	
 	@When("I launch URL for amazon")
 	public void i_load_url_for_amazon() {
-		driver= DriverManager.getDriver();		
+		//driver= DriverManager.getDriver();		
 		driver.get(CommonUtils.getGlobalValue("url"));		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20,TimeUnit.SECONDS);
